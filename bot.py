@@ -118,7 +118,7 @@ async def handle_start(message: Message):
             await message.answer(f"📌 *Когда молиться* ({name}):\n\n{saint[5]}")
         elif action == "candle":
             candle_gif = FSInputFile("media/candle.gif")
-            await message.answer_animation(animation=candle_gif, caption=f"🕯 Свеча поставлена {dativ}.")
+            await message.answer_animation(animation=candle_gif, caption=f"🕯 Молитвенная свеча поставлена {dativ}.")
         elif action == "ask":
             await message.answer(f"✉️ В будущем тут будет AI-помощник, подбирающий святого по намерению молитвы.")
         else:
